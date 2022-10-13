@@ -1,0 +1,22 @@
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around; }
+
+    @mixin flexible ($dis, $direction, $corte, $just, $align)
+    {
+        display: $dis;
+        flex-wrap: $direction $corte;
+        justify-content: $just;
+        align-content: $align;
+
+    }
+
+    section{
+        @include flexible(flex,wrap ,space-around ,center , )
+    }
+        
+    
+  
